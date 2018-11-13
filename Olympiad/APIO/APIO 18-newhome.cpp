@@ -11,7 +11,7 @@
    2) We remove the interval [A; B] from the DS.
    3) We add the intervals [A; X] and [X; B].
 
-   Adding or removing an interval is done by finding the middle position and then concidering the two ranges - [L; Mid] and [Mid + 1; R].
+   Adding or removing an interval is done by finding the middle position and then considering the two ranges - [L; Mid] and [Mid + 1; R].
 
    The complexity will be O(N * log N * log N).
 
