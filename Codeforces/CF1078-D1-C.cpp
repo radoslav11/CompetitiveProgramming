@@ -1,15 +1,11 @@
 /*
 	The main observation is the following:
-
 	A tree has a unique maximum matching if and only if the (max matching * 2) == (number of vertices) or if (max matching) == 0. 
 	It can be easily proven by induction or some general observations on the tree structure.
-
 	This means that during the maximum matching building, we don't want to leave a vertex unmatched. We will do dp[vertex][flag having values 0, 1 and 2].
-
 	1) Flag equal to 0 means that the current vertex is unmatched but it has adjacent vertices.
 	2) Flag equal to 1 means that the current vertex is already matched.
 	3) Flag equal to 2 means that the current vertex is alone (it has no edges adjacent to it).
-
 	The transitions can be easily figured after that. The complexity will be O(N).
 */
 
